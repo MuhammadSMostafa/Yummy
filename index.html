@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/output.css" />
+  </head>
+  <body class="bg-black">
+    <aside class="fixed top-0 left-0 h-screen z-50 flex whitespace-nowrap">
+      <div class="aside-menu bg-black w-64 text-white hidden">
+        <div class="f-col items-start justify-between h-screen p-6">
+          <ul class="f-col gap-4 overflow-hidden" id="list">
+            <li class="pt-2 links" id="search">Search</li>
+            <li class="links" id="categories">Categories</li>
+            <li class="links" id="area">Area</li>
+            <li class="links" id="ingredients">Ingredients</li>
+            <li class="links" id="contact">Contact Us</li>
+          </ul>
+          <div class="footer">
+            <div class="icons">
+              <span class="cursor-pointer">
+                <i class="fa-brands fa-facebook"></i>
+              </span>
+              <span class="cursor-pointer">
+                <i class="fa-brands fa-twitter"></i>
+              </span class="cursor-pointer">
+              <span>
+                <i class="fa-solid fa-globe"></i>
+              </span>
+            </div>
+            <p class="pb-4">Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-16 h-screen bg-white px-2 py-6 f-col items-center justify-between"
+      >
+        <div class="logo-img">
+          <img src="./Images/logo.png" alt="Yummy logo image" />
+        </div>
+          <i id="aside-btn" class="fa-solid fa-align-justify fa-2x cursor-pointer"></i>
+        <div class="icons">
+          <div class="cursor-pointer">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="cursor-pointer">
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="loading fixed inset-0 bg-black z-30 grid hidden place-content-center">
+      <span class="loader"></span>
+    </div>
+    <main>
+      <section class="search section-group grid md:grid-cols-2 gap-5 relative z-40 hidden">
+       <div>
+         <input type="text" placeholder="Search By Name" class="search-input" id="searchName">
+       </div>
+       <div>
+         <input type="text" placeholder="Search By First Letter" class="search-input" maxlength="1" id="searchFirstLetter">
+       </div>
+      </section>
+      <section class="home-meals section-group grid-meals grid">
+     </section>
+     <section class="meal-details section-group grid md:grid-cols-12 gap-4 hidden">
+     </section>
+     <section class="categories section-group grid-meals grid hidden">
+     </section>
+     <section class="area section-group grid-meals grid hidden">
+     </section>
+     <section class="ingredients section-group grid-meals grid hidden">
+     </section>
+     <section class="contact section-group flex flex-col justify-center h-screen hidden">
+      <div class="form grid md:grid-cols-2 gap-5 justify-center">
+          <div class="f-col gap-5">
+            <input type="text" placeholder="Enter Your Name" class="contact-us" id="nameInput">
+            <div class="error hidden">
+              <p>Special characters and numbers not allowed</p>
+            </div>
+          </div>
+          <div class="f-col gap-5">
+            <input type="email" placeholder="Enter Your Email" class="contact-us" id="emailInput">
+            <div class="error hidden">
+              <p>Email not valid *exemple@yyy.zzz</p>
+            </div>
+          </div>
+          <div class="f-col gap-5">
+            <input type="tel" placeholder="Enter Your phone" class="contact-us" id="numberInput">
+            <div class="error hidden">
+              <p>Enter valid Phone Number</p>
+            </div>
+          </div>
+          <div class="f-col gap-5">
+            <input type="number" placeholder="Enter Your Age" class="contact-us" id="ageInput">
+            <div class="error hidden">
+              <p>Enter valid age</p>
+            </div>
+          </div>
+          <div class="f-col gap-5">
+            <input type="password" placeholder="Enter Your Password" class="contact-us" id="passwordInput">
+            <div class="error hidden">
+              <p>Enter valid password *Minimum eight characters, at least one letter and one number or more</p>
+            </div>
+          </div>
+          <div class= "f-col gap-5">
+            <input type="password" placeholder="Repeat Your Password" class="contact-us" id="repeatPasswordInput">
+            <div class="error hidden">
+              <p>Password Doesn't Match</p>
+            </div>
+          </div>
+          <button disabled class="w-fit cursor-pointer bg-red-600 border-red-600 border-[1px] p-2 rounded-md md:col-span-2 m-auto disabled:bg-transparent" id="btn">Submit</button>
+        </div>
+     </section>
+    </main>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/index.js" type="module"></script>
+  </body>
+</html>
