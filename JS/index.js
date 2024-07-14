@@ -49,5 +49,3 @@ $("#searchFirstLetter").on("input", function (e) {
     new Search($(e.target).val(), true);
   }
 });
-
-// npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch
