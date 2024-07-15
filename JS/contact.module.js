@@ -29,7 +29,7 @@ export default class Contact {
     var regex = {
       nameInput: /^[a-zA-Z]{3,}$/,
       emailInput: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-      ageInput: /^(?:[1-8]?[0-9]|90)$/,
+      ageInput: /^([1-8][0-9]|90)$/,
       numberInput: /^\d{11}$/,
       passwordInput: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
       repeatPasswordInput: new RegExp("^" + $("#passwordInput").val() + "$"),
