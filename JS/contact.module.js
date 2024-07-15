@@ -35,7 +35,7 @@ export default class Contact {
       repeatPasswordInput: new RegExp("^" + $("#passwordInput").val() + "$"),
     };
     if (text.length > 1) {
-      if (regex[element.id].test(text) || text.length < 1) {
+      if (regex[element.id].test(text)) {
         element.nextElementSibling.classList.add("hidden");
         return true;
       } else {
