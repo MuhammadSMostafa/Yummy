@@ -34,7 +34,7 @@ export default class Contact {
       passwordInput: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
       repeatPasswordInput: new RegExp("^" + $("#passwordInput").val() + "$"),
     };
-    if (text.length > 1) {
+    if (text.length > 0) {
       if (regex[element.id].test(text)) {
         element.nextElementSibling.classList.add("hidden");
         return true;
