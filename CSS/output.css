@@ -947,10 +947,17 @@ video {
 .section-group {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  padding-inline-start: 8rem;
-  padding-inline-end: 4rem;
+  padding-inline-start: 5rem;
+  padding-inline-end: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .section-group {
+    padding-inline-start: 8rem;
+    padding-inline-end: 4rem;
+  }
 }
 
 .link-btn {
